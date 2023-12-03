@@ -35,21 +35,8 @@ public class FileFunction {
     }
     public void saveFile(){
         //save overwrites the existing file. ie modifies the same file.
-        FileDialog fileDialog = new FileDialog(gui.frame, "Save As", FileDialog.SAVE);
-        fileDialog.setVisible(true);
-
-        if(fileDialog.getFile()!=null){
-            fileName = fileDialog.getFile();
-            fileAddress = fileDialog.getDirectory();
-            gui.frame.setTitle(fileName);
-        }
-        try{
-            FileWriter fileWriter = new FileWriter(fileAddress + fileName);
-            fileWriter.write(gui.textArea.getText());
-            gui.frame.setTitle(fileName);
-        } catch (Exception e){
-            System.out.println("Something wrong in save as method");
-        }
+        FileDialog fileDialog = new FileDialog(gui.frame, "Save", FileDialog.SAVE);
+        // Code was removed
     }
     public void saveAsFile(){
         FileDialog fileDialog = new FileDialog(gui.frame, "Save As", FileDialog.SAVE);
