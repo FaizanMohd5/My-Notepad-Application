@@ -1,12 +1,15 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class GUI {
+public class GUI implements ActionListener{
     JFrame frame;
     JTextArea textArea;
     JScrollPane scrollPane;
     JMenuBar menuBar;
     JMenu fileMenu, editMenu, formatMenu, colorMenu;
     JMenuItem iNew, iOpen, iSave, iSaveAs, iExit;
+    FileFunction fileFunction = new FileFunction(this);
     public GUI(){
         createGUI();
         createTextArea();
@@ -35,19 +38,53 @@ public class GUI {
         frame.setJMenuBar(menuBar);
 
         menuBar.add(fileMenu);
-        iNew = new JMenuItem("New");
-        fileMenu.add(iNew);
-        iOpen = new JMenuItem("Open");
-        fileMenu.add(iOpen);
-        iSave = new JMenuItem("Save");
-        fileMenu.add(iSave);
-        iSaveAs = new JMenuItem("Save As");
-        fileMenu.add(iSaveAs);
-        iExit = new JMenuItem("Exit");
-        fileMenu.add(iExit);
-
         menuBar.add(editMenu);
         menuBar.add(colorMenu);
         menuBar.add(formatMenu);
+
+        iNew = new JMenuItem("New");
+        iNew.addActionListener(this);
+        iNew.setActionCommand("New");
+        fileMenu.add(iNew);
+
+        iOpen = new JMenuItem("Open");
+        iOpen.addActionListener(this);
+        iOpen.setActionCommand("Open");
+        fileMenu.add(iOpen);
+
+        iSave = new JMenuItem("Save");
+        iSave.addActionListener(this);
+        iSave.setActionCommand("Save");
+        fileMenu.add(iSave);
+
+        iSaveAs = new JMenuItem("Save As");
+        iSaveAs.addActionListener(this);
+        iSaveAs.setActionCommand("Save As");
+        fileMenu.add(iSaveAs);
+
+        iExit = new JMenuItem("Exit");
+        iExit.addActionListener(this);
+        iExit.setActionCommand("Exit");
+        fileMenu.add(iExit);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String command = e.getActionCommand();
+        switch (command){
+            case "New" -> {
+                fileFunction.newFile();
+                break;
+            }
+            case "Open" -> {
+                fileFunction.openFile();
+                break;
+            }
+            case "Save" -> {
+                break;
+            }
+            case "Save As" -> {
+                break;
+            }
+        }
     }
 }
