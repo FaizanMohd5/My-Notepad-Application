@@ -36,7 +36,7 @@ public class FileFunction {
     public void saveFile(){
         //save overwrites the existing file. ie modifies the same file.
         FileDialog fileDialog = new FileDialog(gui.frame, "Save", FileDialog.SAVE);
-        // Code was removed
+        // Code is renewed
     }
     public void saveAsFile(){
         FileDialog fileDialog = new FileDialog(gui.frame, "Save As", FileDialog.SAVE);
