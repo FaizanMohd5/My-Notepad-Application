@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40396656-c9c9-45a5-9b8f-d1512e900d14" name="Changes" comment="Added File Function Class.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileFunction.java" beforeDir="false" />
+    <list default="true" id="40396656-c9c9-45a5-9b8f-d1512e900d14" name="Changes" comment="Added 'New' and 'open' feature.">
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701367641946</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added 'New' and 'open' feature.">
+      <created>1701626585368</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701626585368</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +122,7 @@
     <MESSAGE value="Adding elements to GUI." />
     <MESSAGE value="Modifying class GUI." />
     <MESSAGE value="Added File Function Class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added File Function Class." />
+    <MESSAGE value="Added 'New' and 'open' feature." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 'New' and 'open' feature." />
   </component>
 </project>

@@ -80,6 +80,7 @@ public class GUI implements ActionListener{
                 break;
             }
             case "Save" -> {
+                fileFunction.saveFile();
                 break;
             }
             case "Save As" -> {
