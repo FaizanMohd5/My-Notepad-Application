@@ -87,6 +87,9 @@ public class GUI implements ActionListener{
                 fileFunction.saveAsFile();
                 break;
             }
+            case "Exit" -> {
+                break;
+            }
         }
     }
 }
