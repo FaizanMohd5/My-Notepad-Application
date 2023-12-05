@@ -38,20 +38,20 @@ public class FileFunction {
         FileDialog fileDialog = new FileDialog(gui.frame, "Save", FileDialog.SAVE);
         // Code is renewed
     }
-    public void saveAsFile(){
+    public void saveAsFile() {
         FileDialog fileDialog = new FileDialog(gui.frame, "Save As", FileDialog.SAVE);
         fileDialog.setVisible(true);
 
-        if(fileDialog.getFile()!=null){
+        if (fileDialog.getFile() != null) {
             fileName = fileDialog.getFile();
             fileAddress = fileDialog.getDirectory();
             gui.frame.setTitle(fileName);
         }
-        try{
+        try {
             FileWriter fileWriter = new FileWriter(fileAddress + fileName);
             fileWriter.write(gui.textArea.getText());
-            gui.frame.setTitle(fileName);
-        } catch (Exception e){
+            fileWriter.close();  // Close the FileWriter to save changes
+        } catch (Exception e) {
             System.out.println("Something wrong in save as method");
         }
     }
