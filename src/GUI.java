@@ -133,26 +133,11 @@ public class GUI implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         String command = e.getActionCommand();
         switch (command){
-            case "New" -> {
-                fileFunction.newFile();
-                break;
-            }
-            case "Open" -> {
-                fileFunction.openFile();
-                break;
-            }
-            case "Save" -> {
-                fileFunction.saveFile();
-                break;
-            }
-            case "Save As" -> {
-                fileFunction.saveAsFile();
-                break;
-            }
-            case "Exit" -> {
-                fileFunction.exit();
-                break;
-            }
+            case "New" -> fileFunction.newFile();
+            case "Open" -> fileFunction.openFile();
+            case "Save" -> fileFunction.saveFile();
+            case "Save As" -> fileFunction.saveAsFile();
+            case "Exit" -> fileFunction.exit();
         }
     }
 }

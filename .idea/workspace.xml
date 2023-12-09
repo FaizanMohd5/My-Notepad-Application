@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40396656-c9c9-45a5-9b8f-d1512e900d14" name="Changes" comment="Font and Font Size.">
+    <list default="true" id="40396656-c9c9-45a5-9b8f-d1512e900d14" name="Changes" comment="Fonts and Font Sizes.">
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702145702660</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Fonts and Font Sizes.">
+      <created>1702146187960</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702146187960</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +232,7 @@
     <MESSAGE value="'Save' and 'Exit' Commands successfully implemented." />
     <MESSAGE value="Format Function's commencement." />
     <MESSAGE value="Font and Font Size." />
-    <option name="LAST_COMMIT_MESSAGE" value="Font and Font Size." />
+    <MESSAGE value="Fonts and Font Sizes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fonts and Font Sizes." />
   </component>
 </project>
