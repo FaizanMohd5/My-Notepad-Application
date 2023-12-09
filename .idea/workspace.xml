@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40396656-c9c9-45a5-9b8f-d1512e900d14" name="Changes" comment="Format Function's commencement.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="40396656-c9c9-45a5-9b8f-d1512e900d14" name="Changes" comment="Font and Font Size.">
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702143526348</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Font and Font Size.">
+      <created>1702145702660</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702145702660</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +224,7 @@
     <MESSAGE value="Start 'Exit Command'." />
     <MESSAGE value="'Save' and 'Exit' Commands successfully implemented." />
     <MESSAGE value="Format Function's commencement." />
-    <option name="LAST_COMMIT_MESSAGE" value="Format Function's commencement." />
+    <MESSAGE value="Font and Font Size." />
+    <option name="LAST_COMMIT_MESSAGE" value="Font and Font Size." />
   </component>
 </project>

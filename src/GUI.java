@@ -88,6 +88,46 @@ public class GUI implements ActionListener{
 
         fontSizeMenu = new JMenu("Font Size");
         formatMenu.add(fontSizeMenu);
+
+        iFontArial = new JMenuItem("Arial");
+        iFontArial.addActionListener(this);
+        iFontArial.setActionCommand("Arial");
+        fontMenu.add(iFontArial);
+
+        iFontCSMS = new JMenuItem("CSMS");
+        iFontCSMS.addActionListener(this);
+        iFontCSMS.setActionCommand("CSMS");
+        fontMenu.add(iFontCSMS);
+
+        iFontTMR = new JMenuItem("TMR");
+        iFontTMR.addActionListener(this);
+        iFontTMR.setActionCommand("TMR");
+        fontMenu.add(iFontTMR);
+
+        iFontSize8 = new JMenuItem("8");
+        iFontSize8.addActionListener(this);
+        iFontSize8.setActionCommand("8");
+        fontSizeMenu.add(iFontSize8);
+
+        iFontSize12 = new JMenuItem("12");
+        iFontSize12.addActionListener(this);
+        iFontSize12.setActionCommand("12");
+        fontSizeMenu.add(iFontSize12);
+
+        iFontSize16 = new JMenuItem("16");
+        iFontSize16.addActionListener(this);
+        iFontSize16.setActionCommand("16");
+        fontSizeMenu.add(iFontSize16);
+
+        iFontSize24 = new JMenuItem("24");
+        iFontSize24.addActionListener(this);
+        iFontSize24.setActionCommand("24");
+        fontSizeMenu.add(iFontSize24);
+
+        iFontSize28 = new JMenuItem("28");
+        iFontSize28.addActionListener(this);
+        iFontSize28.setActionCommand("28");
+        fontSizeMenu.add(iFontSize28);
     }
     @Override
     public void actionPerformed(ActionEvent e) {
