@@ -88,6 +88,7 @@ public class GUI implements ActionListener{
                 break;
             }
             case "Exit" -> {
+                fileFunction.exit();
                 break;
             }
         }

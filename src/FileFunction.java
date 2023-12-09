@@ -11,6 +11,8 @@ public class FileFunction {
     public void newFile(){
         gui.textArea.setText("");
         gui.frame.setTitle("New");
+        fileName = null;
+        fileAddress = null;
     }
     public void openFile(){
         FileDialog fileDialog = new FileDialog(gui.frame, "Open", FileDialog.LOAD);
@@ -35,8 +37,18 @@ public class FileFunction {
     }
     public void saveFile(){
         //save overwrites the existing file. ie modifies the same file.
-        FileDialog fileDialog = new FileDialog(gui.frame, "Save", FileDialog.SAVE);
-        // Code is renewed
+        if(fileName==null)
+            saveAsFile();
+        else {
+            try{
+                FileWriter fileWriter = new FileWriter(fileAddress + fileName);
+                fileWriter.write(gui.textArea.getText());
+                gui.frame.setTitle(fileName);
+                fileWriter.close();
+            } catch (Exception e){
+                System.out.println("Something wrong in save method.");
+            }
+        }
     }
     public void saveAsFile() {
         FileDialog fileDialog = new FileDialog(gui.frame, "Save As", FileDialog.SAVE);
@@ -54,5 +66,8 @@ public class FileFunction {
         } catch (Exception e) {
             System.out.println("Something wrong in save as method");
         }
+    }
+    public void exit(){
+        System.exit(0);
     }
 }

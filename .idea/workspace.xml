@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40396656-c9c9-45a5-9b8f-d1512e900d14" name="Changes" comment="Modified 'Save' feature.">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27-11-2023_09_43_pm__Changes_.xml" beforeDir="false" />
+    <list default="true" id="40396656-c9c9-45a5-9b8f-d1512e900d14" name="Changes" comment="Start 'Exit Command'.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +153,28 @@
       <option name="project" value="LOCAL" />
       <updated>1701628171210</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Modified 'Save' feature...">
+      <created>1701795307651</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701795307651</updated>
+    </task>
+    <task id="LOCAL-00016" summary="'Save AS' feature modified. Working fine now.">
+      <created>1701795425684</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701795425684</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Start 'Exit Command'.">
+      <created>1701795518023</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701795518023</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +200,9 @@
     <MESSAGE value="Added 'Save As' feature." />
     <MESSAGE value="Added 'Save' feature." />
     <MESSAGE value="Modified 'Save' feature." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified 'Save' feature." />
+    <MESSAGE value="Modified 'Save' feature..." />
+    <MESSAGE value="'Save AS' feature modified. Working fine now." />
+    <MESSAGE value="Start 'Exit Command'." />
+    <option name="LAST_COMMIT_MESSAGE" value="Start 'Exit Command'." />
   </component>
 </project>
