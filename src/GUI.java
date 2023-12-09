@@ -8,12 +8,21 @@ public class GUI implements ActionListener{
     JScrollPane scrollPane;
     JMenuBar menuBar;
     JMenu fileMenu, editMenu, formatMenu, colorMenu;
+    //File menu
     JMenuItem iNew, iOpen, iSave, iSaveAs, iExit;
+    //Format menu
+    JMenuItem iWordWrap;
+    JMenu fontMenu, fontSizeMenu;
+    JMenuItem iFontArial, iFontCSMS, iFontTMR, iFontSize8, iFontSize12, iFontSize16, iFontSize24, iFontSize28;
     FileFunction fileFunction = new FileFunction(this);
+    FormatFunction formatFunction = new FormatFunction(this);
     public GUI(){
         createGUI();
         createTextArea();
         createMenuBar();
+        createFileMenu();
+        createFormatMenu();
+
         frame.setVisible(true);
 
     }
@@ -41,7 +50,8 @@ public class GUI implements ActionListener{
         menuBar.add(editMenu);
         menuBar.add(colorMenu);
         menuBar.add(formatMenu);
-
+    }
+    public void createFileMenu(){
         iNew = new JMenuItem("New");
         iNew.addActionListener(this);
         iNew.setActionCommand("New");
@@ -66,6 +76,18 @@ public class GUI implements ActionListener{
         iExit.addActionListener(this);
         iExit.setActionCommand("Exit");
         fileMenu.add(iExit);
+    }
+    public void createFormatMenu(){
+        iWordWrap = new JMenuItem("Word Wrap");
+        iWordWrap.addActionListener(this);
+        iWordWrap.setActionCommand("Word Wrap");
+        formatMenu.add(iWordWrap);
+
+        fontMenu = new JMenu("Font");
+        formatMenu.add(fontMenu);
+
+        fontSizeMenu = new JMenu("Font Size");
+        formatMenu.add(fontSizeMenu);
     }
     @Override
     public void actionPerformed(ActionEvent e) {
